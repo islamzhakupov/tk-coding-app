@@ -17,7 +17,7 @@ try:
     import pywt
     LIBRARIES_AVAILABLE = True
 except ImportError as e:
-    print(f"Missing libraries: {e}. Image compression features will be disabled.")
+    print(f"Отсутствуют библиотеки: {e}. Функции сжатия изображений будут отключены.")
     LIBRARIES_AVAILABLE = False
     np = None
     Image = None
